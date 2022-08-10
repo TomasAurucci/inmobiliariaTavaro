@@ -1,0 +1,1596 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Condensed:wght@300 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family:'Roboto Condensed', sans-serif;;
+}
+
+/* PAGINA PRINCIPAL */
+
+body{
+    width: 100%;
+    
+}
+
+.hero{
+    margin: 0;
+    font-size: 3rem;
+    height: 100vh;
+    width: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0.0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    
+    
+    ,url(../images/heroTres.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.barraNavegacion{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+}
+
+.logo{
+    margin:2rem;
+    
+    
+}
+
+.linksDirection{
+    margin-top: 2rem;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linksDirection a{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(236, 240, 241);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0s;
+}
+
+.linksDirection a:hover{
+    color: rgb(204, 204, 204);
+}
+
+.fraseBoton{
+    margin-bottom: 2rem;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fraseBoton h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(236, 240, 241);
+
+}
+
+.fraseBoton div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fraseBoton div form{
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.buscador{
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    padding: 0.4rem 2rem;
+}
+
+.botonBuscador{
+    text-transform: uppercase;
+    height: 2.3rem;
+}
+ 
+.botonUno{
+    text-transform: uppercase;
+    height:2.3rem;
+    width: 4rem;
+}
+
+.botonDos{
+    text-transform: uppercase;
+    height: 2.3rem;
+    width: 5.5rem;
+}
+
+.representante{
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* PROPIEDADES DESTACADAS */
+
+.propiedadesDestacadas{
+    background-color: rgb(37, 37, 37);
+    padding: 0rem 5rem;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listasDestacadas{
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.listasDestacadas ul li{
+    color: rgb(236, 240, 241);
+    font-size: 1rem;
+    list-style: none;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.propiedadesDestacadas h2{
+    text-transform: uppercase;
+    color: rgb(236, 240, 241);
+    margin: 3rem 1rem 1rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.listasDestacadas img{
+    border-radius: 1rem;
+    height: 20%;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.propiedadUno{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: rgb(112, 111, 111);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.propiedadDos{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(112, 111, 111);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.propiedadTres{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(112, 111, 111);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* CONTACTO */
+
+.formularios{
+    padding: 1rem;
+    height: 100%;
+    background-color: rgb(112, 111, 111);
+}
+
+.contacto h3{
+    color:rgb(236, 240, 241);
+    font-size: 0.9rem;
+    margin: 2rem 0rem 0rem 2.5rem;
+    grid-area: titulo;
+}
+
+.contacto div{
+    padding-top: 1rem;
+    grid-area: logo;
+}
+
+.contacto article{
+    margin: auto;
+    grid-area: formulario;
+}
+
+.contacto{
+    margin-bottom: 1rem;
+    background-color: rgb(37, 37, 37);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-areas: 
+      "titulo formulario"
+      "logo formulario"
+      "logo formulario"
+    ;
+    grid-template-rows: 0fr 2fr;
+    justify-content: space-evenly;
+}
+
+.contacto img{
+   margin: 1rem 2rem 1rem 0rem
+}
+
+.contacto form{
+   text-transform: uppercase;
+   font-size: 1.4rem;
+   margin: 1rem;
+   color: rgb(236, 240, 241);
+}
+
+/* TASACION */
+
+.tasacion h3{
+    color:rgb(236, 240, 241);
+    font-size: 0.9rem;
+    margin: 0rem 0rem 1rem 3rem;
+    padding-top: 2rem;
+    grid-area: titulo ;
+}
+
+.tasacion div{
+    grid-area: logo;
+}
+
+.tasacion article{
+    margin: auto;
+    grid-area: formulario;
+}
+
+.tasacion img{
+    height: 8rem;
+    width: 8rem;
+    margin: 1rem;
+}
+
+.tasacion{
+    background-color: rgb(37, 37, 37);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-areas: 
+      "titulo formulario"
+      "logo formulario"
+      "logo formulario"
+    ;
+    justify-content: space-evenly;
+}
+
+.tasacion form{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin: 1rem;
+    color: rgb(236, 240, 241);
+}
+
+ /* FOOTER */
+
+footer{
+    padding: 0rem 1rem;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer img{
+    margin: 1rem 0rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+footer div{
+   color:rgb(236, 240, 241);
+   font-size: 1rem;
+}
+
+/* ==============CELULAR HORIZONTAL============ */
+
+@media screen and (min-width: 480px){
+
+/* CONTACTO */
+
+.formularios{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto{
+    margin-bottom: 0rem;
+    width: auto;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.contacto h3{
+   margin-bottom: 1rem;
+}
+
+.tasacion{
+    height: auto;
+}
+
+.tasacion h3{
+    margin-bottom: 1rem;
+}
+
+}
+
+/* ============= TABLET ============== */
+
+@media screen and (min-width: 600px){
+
+/* PAGINA PRINCIPAL */
+
+.hero{
+    margin: 0;
+    font-size: 3rem;
+    height: 100vh;
+    width: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0.0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    
+    
+    ,url(../images/heroTres.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.barraNavegacion{
+    padding-bottom: 7rem;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.linksDirection{
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.fraseBoton{
+    height: 60%;
+}
+
+.fraseBoton h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.buscador{
+    padding-left: 4rem;
+    font-size: 1.5rem;
+    width: 40rem;
+    height: 2.5rem;
+}
+
+.botonUno{
+    height: 2.5rem;
+}
+
+.botonDos{
+    height: 2.5rem;
+}
+
+.botonBuscador{
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+.representante{
+    width: 50%;
+    height: 3rem;
+
+}
+
+/* CONTACTO */
+
+.formularios{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto{
+    width: auto;
+    height: 16rem;
+    margin-right: 1rem;
+}
+
+.tasacion{
+    height: 16rem;
+}
+
+.tasacion h3{
+    margin-bottom: 2rem;
+}
+
+}
+
+/* =================TABLET HORIZONTAL============= */
+
+@media screen and (min-width: 768px){
+
+/* HEADER */
+
+.linksDirection{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 9rem;
+}
+
+
+/* PROPIEDADES DESTACADAS */
+
+.propiedadesDestacadas h2{
+    font-size: 1.4rem;
+}
+
+.propiedadesDestacadas{
+    padding: 0rem;
+    height: 100vh;
+}
+
+.listasDestacadas{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listasDestacadas img{
+    height: 20rem;
+    width: 20rem;
+}
+
+.listasDestacadas{
+    font-size: 4rem;
+}
+
+.listasDestacadas ul li{
+    font-size: 1.2rem;
+}
+
+.propiedadUno{
+    
+    height: 80%;
+    margin-top: 0rem;
+}
+
+.propiedadDos{
+    height: 80%;
+}
+
+.propiedadTres{
+    height: 80%;
+}
+
+.tasacion article form{
+    font-size: 1.7rem;
+}
+
+.contacto article form{
+    font-size: 1.7rem;
+}
+
+
+}
+
+/* ========PANTALLA ESCRITORIO PORTATIL========= */
+
+@media screen and (min-width: 1024px){
+    
+/* HEADER */
+
+.logo{
+    margin-left: 1rem;
+}
+
+.linksDirection{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 12rem;
+}
+
+.linksDirection a{
+    font-size: 1.3rem;
+}
+
+
+.propiedadesDestacadas h2{
+    font-size: 2rem;
+}
+
+
+}
+
+@media screen and (min-width: 1200px){
+
+/* HEADER */
+    
+
+.fraseBoton h1{
+    font-size: 2.5rem;
+}
+
+.fraseBoton{
+    width: 80%;
+}
+
+.buscador{
+    height: 3.5rem;
+    width: 60rem;
+    padding-left: 12rem;
+}
+
+.botonUno{
+    font-size: 1rem;
+    width: 6rem;
+    height: 3.5rem;
+}
+
+.botonDos{
+    font-size: 1rem;
+    width: 6rem;
+    height: 3.5rem;
+}
+
+.botonBuscador{
+    height: 3.6rem;
+}
+    
+}
+
+/*=============SECCION PROPIEDADES===========*/
+
+/* SMARTPHONE */
+
+/* HEADER */
+
+.parteSuperior{
+    height: 17rem;
+    background-color:rgb(37, 37, 37);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barraNavegacionDos{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barraNavegacionDos a{
+    margin-top: 0.5rem;
+    color:rgb(236, 240, 241);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0s;
+}
+
+.barraNavegacionDos a:hover{
+    color:rgb(180, 180, 180)
+}
+
+.logoDos{
+    margin: 2rem;
+}
+
+
+
+
+
+/* FILTROS */
+
+.filtrosDestacadas div{
+    padding: 1rem;
+    background-color: rgb(37, 37, 37);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filtrosDestacadas div button{
+    width: 80%;
+}
+
+.filtrosDestacadas div h3{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color:rgb(236, 240, 241);
+    margin-bottom: 0.5rem;
+}
+
+.filtrosDestacadas h3{
+    color: rgb(37, 37, 37);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    grid-area: titulo;
+}
+
+.filtroUno{
+    grid-area: uno;
+}
+
+.filtroDos{
+    grid-area: dos;
+}
+
+.filtroTres{
+    grid-area: tres;
+}
+
+.filtroCuatro{
+    grid-area: cuatro;
+}
+
+.filtroCinco{
+    grid-area: cinco;
+}
+
+.filtroCinco textarea{
+    text-align: center;
+    
+}
+
+.filtrosDestacadas{
+    padding: 1rem;
+    background-color: rgb(112, 111, 111);
+    font-size: 3rem;
+    display: grid;
+    grid-template-areas: 
+    
+    "titulo titulo"
+    "uno dos"
+    "tres cuatro"
+    "cinco cinco"
+    
+    ;
+    gap: 1rem;
+}
+
+/* PROPIEDADES EN VENTA */
+
+.primeraFilaPropiedades{
+    border: none;
+    background-color: rgb(37, 37, 37);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeraPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.segundaPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terceraPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuartaPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quintaPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sextaPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenesPropiedades{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.primeraFilaPropiedades div ul{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: rgb(112, 111, 111);
+    width: 19.4rem
+}
+
+.primeraFilaPropiedades div ul li{
+    font-size: 1.2rem;
+    color: rgb(236, 240, 241);
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.primeraFilaPropiedades div h3{
+    text-transform: uppercase;
+    padding: 0.5rem;
+    text-align: center;
+    color: rgb(236, 240, 241);
+    font-size: 1.5rem;
+    width: 19.4rem;
+    background-color: rgb(112, 111, 111);
+}
+
+/* SEGUNDA FILA PROPIEDADES */
+
+.segundaFilaPropiedades{
+    background-color: rgb(37, 37, 37);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.segundaFilaPropiedades div ul{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: rgb(112, 111, 111);
+    width: 19.4rem
+}
+
+.segundaFilaPropiedades div ul li{
+    font-size: 1.2rem;
+    color: rgb(236, 240, 241);
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.segundaFilaPropiedades div h3{
+    text-transform: uppercase;
+    padding: 0.5rem;
+    text-align: center;
+    color: rgb(236, 240, 241);
+    font-size: 1.4rem;
+    width: 19.4rem;
+    background-color: rgb(112, 111, 111);
+}
+
+/* FOOTER */
+
+.footerDos{
+   background-color: rgb(112, 111, 111);
+   
+}
+
+.copy{
+    color: rgb(37, 37, 37);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+/* ==========CELULAR HORIZONTAL========== */
+
+@media screen and (min-width: 480px){
+
+.filtroCinco textarea{
+    width: 80%;
+    
+}
+
+}
+
+.primeraFilaPropiedades{
+    padding: 2rem;
+}
+
+.primeraFilaPropiedades div{
+    width: 70%;
+    margin: 1rem;
+}
+
+.primeraFilaPropiedades div ul{
+    width: 75%;
+
+
+}
+
+.primeraFilaPropiedades div h3{
+    width: 75%;
+}
+
+.imagenesPropiedades{
+    width: 75%;
+}
+
+
+.segundaFilaPropiedades{
+    padding: 2rem;
+}
+
+.segundaFilaPropiedades div{
+    width: 70%;
+    margin: 1rem;
+}
+
+.segundaFilaPropiedades div ul{
+    width: 75%;
+
+
+}
+
+.segundaFilaPropiedades div h3{
+    width: 75%;
+}
+
+/* ==================TABLET=============== */
+
+@media screen and (min-width: 600px){
+
+/* HEADER */
+
+.parteSuperior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+}
+
+.logoDos{
+    margin: 2rem 2rem
+}
+
+.barraNavegacionDos{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 72%;
+}
+
+/* FILTROS */
+
+.filtros{
+    
+    grid-area: filtros;
+}
+
+.filtroCinco{
+    margin-bottom: 1rem;
+}
+
+/* PROPIEDADES */
+
+.primeraFilaPropiedades{
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.segundaFilaPropiedades{
+    height: auto;
+    padding: 1rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.primeraFilaPropiedades div{
+    margin: 1rem;
+    width: 30%;
+    height: 80%;
+  
+}
+
+.segundaFilaPropiedades div{
+    margin: 1rem;
+    width: 30%;
+    height: 80%;
+    
+}
+
+.imagenesPropiedades{
+    width: 100%;
+}
+
+.primeraFilaPropiedades div h3{
+    width: 100%;
+}
+
+.primeraFilaPropiedades div ul{
+    width: 100%;
+}
+
+.segundaFilaPropiedades div h3{
+    width: 100%;
+}
+
+.segundaFilaPropiedades div ul{
+    width: 100%;
+}
+
+/* FOOTER */
+
+.copy{
+    font-size: 1.2rem;
+}
+
+}
+
+/* ============TABLET HORIZONTAL============== */
+
+@media screen and (min-width: 768px){
+
+/* NAV */
+
+.barraNavegacionDos{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 6rem;
+}
+
+/* FOOTER */
+
+.copy{
+    font-size: 1.3rem;
+}
+
+}
+
+/* ===============ESCRITORIO PORTATIL============ */
+
+@media screen and (min-width: 1024px){
+
+/* HEADER */
+
+.barraNavegacionDos{
+    padding-left: 18rem;
+}
+
+.inicio{
+    margin-right: 1.5rem;
+}
+
+/* FILTROS */
+
+.filtrosDestacadas{
+    padding: 1rem;
+    background-color: rgb(112, 111, 111);
+    font-size: 3rem;
+    display: grid;
+    grid-template-areas: 
+    
+   "titulo titulo titulo titulo"
+   "uno dos tres cuatro"
+   "cinco cinco cinco cinco" 
+    
+    ;
+    gap: 1rem;
+}
+
+.filtrosDestacadas div{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloFiltros{
+    margin-left: 9rem;
+}
+
+}
+
+/* =============ESCRITORIO PC=========== */
+
+@media screen and (min-width: 1200px){
+
+/* HEADER */
+
+.barraNavegacionDos{
+    padding-left: 25rem;
+}
+
+.primeraFilaPropiedades div{
+    margin: 3rem;
+}
+
+.segundaFilaPropiedades div{
+    margin: 3rem;
+}
+}
+
+/* EMPRENDIMIENTOS */
+
+/* HEADER */
+
+.propiedades header{
+    height: auto;
+}
+
+.primeraFilaEmprendimientos{
+    border: none;
+    background-color: rgb(37, 37, 37);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeraPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.segundaPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terceraPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuartaPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quintaPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sextaPropiedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenesEmprendimientos{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.primeraFilaEmprendimientos div ul{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: rgb(112, 111, 111);
+    width: 19.4rem
+}
+
+.primeraFilaEmprendimientos div ul li{
+    font-size: 1.2rem;
+    color: rgb(236, 240, 241);
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.primeraFilaEmprendimientos div h3{
+    text-transform: uppercase;
+    padding: 0.5rem;
+    text-align: center;
+    color: rgb(236, 240, 241);
+    font-size: 1.5rem;
+    width: 19.4rem;
+    background-color: rgb(112, 111, 111);
+}
+
+/* SEGUNDA FILA PROPIEDADES */
+
+.segundaFilaEmprendimientos{
+    background-color: rgb(37, 37, 37);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.segundaFilaEmprendimientos div ul{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: rgb(112, 111, 111);
+    width: 19.4rem
+}
+
+.segundaFilaEmprendimientos div ul li{
+    font-size: 1.2rem;
+    color: rgb(236, 240, 241);
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.segundaFilaEmprendimientos div h3{
+    text-transform: uppercase;
+    padding: 0.5rem;
+    text-align: center;
+    color: rgb(236, 240, 241);
+    font-size: 1.4rem;
+    width: 19.4rem;
+    background-color: rgb(112, 111, 111);
+}
+
+/* CELULAR HORIZONTAL */
+
+@media screen and (min-width: 480px){
+
+/* EMPRENDIMIENTOS */
+
+.primeraFilaEmprendimientos{
+    padding: 2rem;
+}
+    
+.primeraFilaEmprendimientos div{
+    width: 70%;
+    margin: 1rem;
+}
+    
+.primeraFilaEmprendimientos div ul{
+    width: 75%;
+    
+    
+}
+    
+.primeraFilaEmprendimientos div h3{
+    width: 75%;
+}
+    
+.imagenesEmprendimientos{
+    width: 75%;
+}
+    
+    
+.segundaFilaEmprendimientos{
+    padding: 2rem;
+}
+    
+.segundaFilaEmprendimientos div{
+    width: 70%;
+    margin: 1rem;
+}
+    
+.segundaFilaEmprendimientos div ul{
+    width: 75%;
+    
+    
+}
+    
+.segundaFilaEmprendimientos div h3{
+    width: 75%;
+}
+
+}
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+
+    .primeraFilaEmprendimientos {
+        height: auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .segundaFilaEmprendimientos {
+        height: auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .primeraFilaEmprendimientos div {
+        margin: 1rem;
+        width: 30%;
+        height: 80%;
+
+    }
+
+    .segundaFilaEmprendimientos div {
+        margin: 1rem;
+        width: 30%;
+        height: 80%;
+
+    }
+
+    .imagenesEmprendimientos {
+        width: 100%;
+    }
+
+    .primeraFilaEmprendimientos div h3 {
+        width: 100%;
+    }
+
+    .primeraFilaEmprendimientos div ul {
+        width: 100%;
+    }
+
+    .segundaFilaEmprendimientos div h3 {
+        width: 100%;
+    }
+
+    .segundaFilaEmprendimientos div ul {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+ .primeraFilaEmprendimientos div{
+    margin: 3rem;
+ }
+
+ .segundaFilaEmprendimientos div{
+    margin: 3rem;
+ }
+
+}
+
+/* ===========NOSOTROS============= */
+
+/* HEADER */
+
+.bodyNosotros header{
+    height: auto;
+}
+
+.nosotros{
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0.0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    
+    
+    ,url(../images/hero-nosotros.jpg);
+    background-position: center;
+}
+
+.nosotros main{
+    color: rgb(236, 240, 241);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.nosotros main h1{
+    text-align: center;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase; 
+}
+
+.nosotros main h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.nosotros main p{
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+/* =========CELULAR=========== */
+
+@media screen and (min-width: 480px){
+
+/* BODY */
+
+.nosotros main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nosotros main h1{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+
+
+.nosotros main p{
+    font-weight: bold;
+    margin-bottom: 6rem;
+    padding: 1rem 2rem;
+}
+
+}
+
+/* ============TABLET========= */
+
+@media screen and (min-width: 600px){
+
+/* BODY */
+
+.nosotros main h1{
+    font-size: 1.8rem;
+    text-align: start;
+}
+
+.nosotros main h2{
+    font-size: 1.8rem;
+    
+}
+
+.nosotros main p{
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+    
+}
+
+}
+
+/* ==========TABLET HORIZONTAL===========  */
+
+@media screen and (min-width: 1024px){
+
+/* BODY */
+
+.nosotros main h1{
+    font-size: 2rem;
+}
+
+.nosotros main h2{
+    font-size: 2rem;
+}
+
+.nosotros main p{
+    font-size: 1.4rem;
+}
+}
+
+
+@media screen and (min-width: 1200px){
+
+.nosotros main p{
+    margin-bottom: 8rem;
+}   
+
+}
+
+/* SUCURSALES */
+
+
+.bodySucursales header{
+    height: auto;
+}
+
+.sucursales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0.0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    
+    
+    ,url(../images/hero-sucursales.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.sucursales div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+
+.imagenesSucursales{
+   border-radius: 1rem;
+
+}
+
+.sucursales h1{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 3rem;
+    color: rgb(236, 240, 241);
+}
+
+.sucursales div h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    color: rgb(236, 240, 241);
+}
+
+.sucursales div ul li{
+    text-align: center;
+    list-style: none;
+    color: rgb(236, 240, 241);
+    font-size: 1rem;
+
+}
+
+/* =========CELULAR HORIZONTAL========= */
+
+@media screen and (min-width: 480px){
+
+.sucursales h1{
+    font-size: 1.2rem;
+}
+
+.sucursales div h2{
+    font-size: 1.2rem;
+}
+
+.sucursales div ul li{
+    font-size: 1.3rem;
+}
+}
+
+/* ============TABLET===== */
+
+@media screen and (min-width: 600px){
+
+.sucursales h1{
+    font-size: 1.4rem;
+}
+    
+.sucursales div h2{
+    font-size: 1.4rem;
+}
+    
+.sucursales div ul li{
+    font-size: 1.5rem;
+}
+.imagenesSucursales{
+    width: 37rem;
+    height: 25rem;
+}
+}
+
+@media screen and (min-width: 1024px){
+
+.imagenesSucursales{
+    width: 30rem;
+    height: 20rem;
+}
+
+.sucursales h1{
+    text-align: center;
+    grid-area: titulo;
+
+}
+
+.sucursalUno{
+    grid-area: sucursalUno;
+}
+
+.sucursalDos{
+    grid-area: sucursalDos;
+}
+
+.sucursalTres{
+    grid-area: sucursalTres;
+}
+
+.sucursales{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    
+    "titulo titulo titulo"
+    "sucursalUno sucursalDos sucursalTres"
+    ;
+}
+}
+
+
+
+
+
