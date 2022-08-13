@@ -183,8 +183,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-
+    align-items: center;    
 }
 
 .propiedadDos{
@@ -496,6 +495,11 @@ footer div{
     align-items: center;
 }
 
+.listasDestacadas section{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .listasDestacadas img{
     height: 20rem;
     width: 20rem;
@@ -560,6 +564,15 @@ footer div{
 }
 
 
+}
+
+.propiedadesDestacadas img{
+    transition: all 2s;
+}
+
+.listasDestacadas img:hover{
+    height: 25rem;
+    width: 25rem;
 }
 
 @media screen and (min-width: 1200px){
